@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>311 Chicago Graffiti Data </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">Web Visualizations</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active">
+              <a class="nav-link" href="box-plots.html">Box plots</a></li>
+          <li class="nav-item">
+              <a class="nav-link" href="map.html">Map</a></li>
+          <li class="nav-item">
+      </div>
+  </nav>
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Chicago Graffiti</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11">
+        <div id="locBoxPlot"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11">
+        <div id="surBoxPlot"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11">
+        <div id="comBoxPlot"></div>
+      </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/box-plots.js"></script>
+
+</body>
+
+</html>
