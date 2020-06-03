@@ -1,7 +1,9 @@
 var d3colors = Plotly.d3.scale.category10();
 
 d3.json("box_plots_dict.json").then(function(data) {
-
+    d3.select("#locSpinner").remove();
+    d3.select("#surSpinner").remove();
+    d3.select("#comSpinner").remove();
     //Comunity Area Box Plot
     let box_data = []
     data['PER CAPITA INCOME ORDER'].forEach(j => {
@@ -34,7 +36,7 @@ d3.json("box_plots_dict.json").then(function(data) {
       }, 
       xaxis: {
         type: 'linear', 
-        range: [-0.5, 6], 
+        range: [-0.5, 6.25], 
         title: 'Time to complete cleanup (days)', 
         //autorange: true,
         automargin: true
@@ -87,7 +89,7 @@ d3.json("box_plots_dict.json").then(function(data) {
       }, 
       xaxis: {
         type: 'linear', 
-        range: [-0.5, 6], 
+        range: [-0.5, 6.25], 
         title: 'Time to complete cleanup (days)', 
         //autorange: true,
         automargin: true
@@ -140,7 +142,7 @@ d3.json("box_plots_dict.json").then(function(data) {
       }, 
       xaxis: {
         type: 'linear', 
-        range: [-0.5, 6], 
+        range: [-0.5, 6.25], 
         title: 'Time to complete cleanup (days)', 
         //autorange: true,
         automargin: true
