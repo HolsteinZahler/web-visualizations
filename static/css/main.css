@@ -1,0 +1,48 @@
+.jumbotron{
+    background-color: #8EBAD9;
+    opacity: 1;  
+    margin:  10px;
+
+}
+
+.navbar{
+    background-color: #D9D28E;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-image: url('/static/images/red-mirror-f303VzauP6w-unsplash.jpg');
+    background-repeat: no-repeat;
+/*    background-size: 1920px 1313px;
+    background-size: cover;*/
+}
+
+.container{
+    height:100%;
+}
+
+.row{
+    margin: auto;
+}
+
+
+.contentRow{
+    padding: 10px;
+    opacity: 0.9;
+}
+
+.content{
+    background-color: white;
+    opacity: 0.9;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.aboutBlock {
+    margin-top: 10px;
+    background-color: black;
+    padding: 15px;
+    bottom: 0;
+  }
