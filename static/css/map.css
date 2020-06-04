@@ -25,7 +25,20 @@
   #mapLegend {
       display: none;
   }
+  .year {
+    transform: rotate(-45deg);
+    height: 10px;
+  }
 }
+@media only screen and (max-width: 415px) {
+  #mapLegend {
+      display: none;
+  }
+  .year {
+    display: none;
+  }
+}
+
 
 #map{
   background-color: white;
