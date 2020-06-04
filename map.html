@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>311 Chicago Graffiti Data </title>
+  <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  -->
+  <link rel="stylesheet" type="text/css" href=./static/css/bootstrap.min.css>
+   <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href=./static/css/main.css>
+  <link rel="stylesheet" type="text/css" href=./static/css/map.css>
+</head>
+
+<body>
+
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Web Visualizations</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="box-plots.html">Box plots</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-12 jumbotron text-center">
+        <h1>Chicago Graffiti</h1>
+        <p>Use the interactive map below to explore the dataset</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="contentRow">
+  <div class="row justify-content-md-center">
+    
+      <div class="col-sm-12 col-md-9" style="margin: auto;">
+        <div class="content">
+          <!-- The div that holds slider -->
+          <div class="slidecontainer">
+            <input type="range" min="2010" max="2019" value="50" class="slider" id="myRange">
+          </div>
+          <div class="flexContainer">
+              <div>2010</div>         
+              &zwj; <div>2011</div>
+              &zwj; <div>2012</div>
+              &zwj; <div>2013</div>
+              &zwj; <div>2014</div>
+              &zwj; <div>2015</div>
+              &zwj; <div>2016</div>
+              &zwj; <div>2017</div>
+              &zwj; <div>2018</div>
+              &zwj; <div>All &nbsp; </div>
+            </div>
+          <div id="demo">
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="contentRow">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-11 col-md-6"> 
+          <div id="map" style="margin: 1em auto; width: 100%; height: 500px; border: solid 2px black;">
+            <div id="mapSpinner">
+              <div class="spinner-border text-primary" role="status">
+              </div>
+              Loading...
+            </div>
+      </div>
+      </div>
+      <div class="col-md-2"> 
+          <div id="mapLegend">
+            <div id="legSpinner">
+              <div class="spinner-border text-primary" role="status">
+              </div>
+              Loading...
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<div class="aboutBlock">
+        <p p style="text-align:left;">
+            <a href="https://unsplash.com/photos/f303VzauP6w  target="_blank" target="_blank">Photo by Red Mirror</a> 
+        <span style="float:right;">
+            <a style="color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@redmirror?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer" title="Photo by Red Mirror"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Red Mirror</span></a>
+        </span>
+        </p>
+</div>
+
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <!-- D3 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <!-- Geojson data -->
+  <script type="text/javascript" src="static/js/com_area.js"></script>
+  <script src="./static/js/color-map.js"></script>
+
+</body>
+
+</html>
