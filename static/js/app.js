@@ -68,8 +68,10 @@ d3.json("./static/data/data_dict.json").then(function(data) {
         let dropdownMenu = d3.select("#selComArea");
         
         // Assign the value of the dropdown menu option to a letiable
-        const comAreaStr = d3.select('#selComArea option:checked').text();
-        //console.log(comAreaStr);
+        let comAreaStr = d3.select('#selComArea option:checked').text();
+        comAreaStr = comAreaStr.replace("-","<br>")
+        
+        console.log(comAreaStr);
         comArea = dropdownMenu.property("value");
         //console.log(comArea);
         com_area_data = data[comArea];
@@ -148,7 +150,7 @@ d3.json("./static/data/data_dict.json").then(function(data) {
         }];
         
         let layout2 = {
-            title: 'Graffiti Surfaces in Community Area '+comAreaStr,
+            title: 'Graffiti Surfaces in Community Area <br>'+comAreaStr,
             xaxis: {
                 title: 'Number of reports',
                 automargin: true
