@@ -1,6 +1,6 @@
 var d3colors = Plotly.d3.scale.category10();
 
-d3.json("box_plots_dict.json").then(function(data) {
+d3.json("./static/data/box_plots_dict.json").then(function(data) {
     d3.select("#locSpinner").remove();
     d3.select("#surSpinner").remove();
     d3.select("#comSpinner").remove();

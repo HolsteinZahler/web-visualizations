@@ -1,7 +1,7 @@
 var d3colors = Plotly.d3.scale.category10();
 
 let firstKey = 'empty'
-d3.json("data_dict.json").then(function(data) {
+d3.json("./static/data/data_dict.json").then(function(data) {
 
     d3.select("#barSpinner").remove();
     d3.select("#bar2Spinner").remove();
