@@ -32,85 +32,107 @@
           </ul>
       </div>
     </nav>
-    <div class="row  d-flex justify-content-center">
+    <div class="row justify-content-md-center">
       <div class="col-md-12 jumbotron text-center">
         <h1>Chicago Graffiti</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
-    <div class="contentRow d-flex justify-content-center">
-    <div class="row">
-        <div class="col-md-11">
-          <div id="scatter"></div>
+    <div class="contentRow">
+      <div class="row justify-content-md-center">
+          <div class="col-md-11">
+            <div class="content">
+              <div id="scatter">
+                <div id="scatterSpinner">
+                  <div class="spinner-border text-primary" role="status">
+                  </div>
+                  Loading...
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="contentRow">
+      <div class="row justify-content-md-center">
+        <div class="col-md-5">
+          <div class="well content">
+            <h5>Community Area</h5>
+            <select id="selComArea"></select>
+          </div>
         </div>
-    </div>
-    </div>
-    <div class="contentRow d-flex justify-content-center">
-    <div class="row">
-      <div class="col-md-5">
-        <div class="well">
-          <h5>Community Area</h5>
-          <select id="selComArea"></select>
+        <div class="col-md-5">
+          <div class="panel panel-primary content">
+            <div class="panel-heading">
+              <h3 class="panel-title">Demographic Info</h3>
+            </div>
+            <div id="sample-metadata" class="panel-body">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Community Area</th>
+                    <td  id="comAreaName"> Rogers Park </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Percent Unemployed</th>
+                    <td id="perUnemployed">8.7</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Percent W/O H.S. Diploma</th>
+                    <td id="perWOHS">18.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Percent Aged 18-63</th>
+                    <td id="perAged">72.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Per Capita Income</th>
+                    <td id="perCap">23939</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Hardship Index</th>
+                    <td id="hrdIdx">39.0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+  </div>
+  <div class="contentRow">
+    <div class="row justify-content-md-center">
+      <div class="col-md-6">
+        <div class="content">
+          <div id="bar">
+            <div id="barSpinner">
+              <div class="spinner-border text-primary" role="status">
+              </div>
+              Loading...
+            </div>
           </div>
-          <div id="sample-metadata" class="panel-body">
-            <table class="table">
-              <tbody>
-                <tr>
-                  <th scope="row">Community Area</th>
-                  <td  id="comAreaName"> Rogers Park </td>
-                </tr>
-                <tr>
-                  <th scope="row">Percent Unemployed</th>
-                  <td id="perUnemployed">8.7</td>
-                </tr>
-                <tr>
-                  <th scope="row">Percent W/O H.S. Diploma</th>
-                  <td id="perWOHS">18.2</td>
-                </tr>
-                <tr>
-                  <th scope="row">Percent Aged 18-63</th>
-                  <td id="perAged">72.5</td>
-                </tr>
-                <tr>
-                  <th scope="row">Per Capita Income</th>
-                  <td id="perCap">23939</td>
-                </tr>
-                <tr>
-                  <th scope="row">Hardship Index</th>
-                  <td id="hrdIdx">39.0</td>
-                </tr>
-              </tbody>
-            </table>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content">
+          <div id="bar2">
+            <div id="bar2Spinner">
+              <div class="spinner-border text-primary" role="status">
+              </div>
+              Loading...
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-    <div class="contentRow d-flex justify-content-center">
-      <div class="row">
-        <div class="col-md-5">
-          <div id="bar"></div>
-        </div>
-        <div class="col-md-5">
-          <div id="bar2"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>  
 
 <div class="aboutBlock">
         <p p style="text-align:left;">
             <a href="https://unsplash.com/photos/f303VzauP6w  target="_blank" target="_blank">Photo by Red Mirror</a> 
         <span style="float:right;">
-            <a style="color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" 
-            href="https://unsplash.com/@redmirror?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            target="_blank" rel="noopener noreferrer" title="Photo by Red Mirror"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Red Mirror</span></a>
+            <a style="color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@redmirror?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer" title="Photo by Red Mirror"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Red Mirror</span></a>
         </span>
         </p>
 </div>
