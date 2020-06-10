@@ -24,8 +24,8 @@ function getColor(value,num_of_colors,dataMin,dataMax){
 
 // Initialize slider
 var slider = document.getElementById("myRange");
-// var output = document.getElementById("demo");
-// output.innerHTML = slider.value; // Display the default slider value
+var output = document.getElementById("singleYear");
+output.innerHTML = slider.value; // Display the default slider value
 
 
 d3.json("./static/data/com_map_dict.json").then(function(data) {
@@ -143,10 +143,14 @@ d3.json("./static/data/com_map_dict.json").then(function(data) {
         console.log(this.value);
         //output.innerHTML = "2010-2018";
         getMap(this.value);
+        var output = document.getElementById("singleYear");
+        output.innerHTML = "2010-2018"; // Display the default slider value
     } else {
         console.log(this.value);
         //output.innerHTML = this.value;
         getMap(this.value);
+        var output = document.getElementById("singleYear");
+        output.innerHTML = slider.value; // Display the default slider value
     }
   }
 
