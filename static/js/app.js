@@ -121,7 +121,7 @@ d3.json("./static/data/data_dict.json").then(function(data) {
         h_bar_labels = com_area_data['surface']['types'];
         h_bar_labels_text =[];
         h_bar_hover = [];
-        let value_sum = h_bar_values.reduce(function(a, b){
+        value_sum = h_bar_values.reduce(function(a, b){
             return a + parseInt(b);
         }, 0);
         for (let i in h_bar_values) {
