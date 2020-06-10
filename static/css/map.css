@@ -19,6 +19,11 @@
       padding: 10px;
 }
 
+#singleYear{
+  text-align: center;
+  line-height: 25px;
+  display: none;
+}
 
 /* Hide legend when screen is small*/
 @media only screen and (max-width: 770px) {
@@ -36,6 +41,9 @@
   }
   .year {
     display: none;
+  }
+  #singleYear {
+    display: block;
   }
 }
 
