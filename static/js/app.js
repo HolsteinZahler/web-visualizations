@@ -51,9 +51,10 @@ d3.json("./static/data/data_dict.json").then(function(data) {
             title: 'Percent Unemployment',
             automargin: true
             },
+ //       autosize: true
     }
 
-    Plotly.newPlot('scatter', scatter_trace, scatter_layout);
+    Plotly.newPlot('scatter', scatter_trace, scatter_layout, {responsive: true});
     
     
         
@@ -119,9 +120,10 @@ d3.json("./static/data/data_dict.json").then(function(data) {
                 title: 'Graffiti location',
                 automargin: true
                 },
+//            autosize: true
         }
           
-        Plotly.newPlot('bar', trace1, layout1);
+        Plotly.newPlot('bar', trace1, layout1, {responsive: true});
 
         h_bar_values = com_area_data['surface']['counts'];
         h_bar_labels = com_area_data['surface']['types'];
@@ -159,9 +161,10 @@ d3.json("./static/data/data_dict.json").then(function(data) {
                 title: 'Graffiti surface',
                 automargin: true
                 },
+ //           autosize: true
         }
         
-        Plotly.newPlot('bar2', trace2, layout2);
+        Plotly.newPlot('bar2', trace2, layout2, {responsive: true});
 
 //           let trace2 = [{
 //             hovertext: sample_data["otu_labels"],

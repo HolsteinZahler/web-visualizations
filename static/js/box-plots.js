@@ -26,7 +26,7 @@ d3.json("./static/data/box_plots_dict.json").then(function(data) {
 
     box_layout = {
         title: 'Boxplots of cleanuptimes - community areas in decending order by Per Capita Income',
-      width: 840, 
+//      width: 100%, 
       yaxis: {
     //    type: 'category', 
     //    range: [-0.5, 0.5], 
@@ -54,7 +54,8 @@ d3.json("./static/data/box_plots_dict.json").then(function(data) {
     };
     Plotly.plot('comBoxPlot', {
       data: box_data,
-      layout: box_layout
+      layout: box_layout,
+      config: {responsive: true}
     });
 
     // Surface type boxplot
@@ -79,7 +80,7 @@ d3.json("./static/data/box_plots_dict.json").then(function(data) {
 
     box_layout = {
         title: 'Boxplots of cleanuptimes by surface type',
-      width: 840, 
+//      width: 100%, 
       yaxis: {
     //    type: 'category', 
     //    range: [-0.5, 0.5], 
@@ -107,7 +108,8 @@ d3.json("./static/data/box_plots_dict.json").then(function(data) {
     };
     Plotly.plot('surBoxPlot', {
       data: box_data,
-      layout: box_layout
+      layout: box_layout,
+      config: {responsive: true}
     });
 
     // locations type boxplot
@@ -132,7 +134,7 @@ d3.json("./static/data/box_plots_dict.json").then(function(data) {
 
     box_layout = {
         title: 'Boxplots of cleanuptimes by graffiti location',
-      width: 840, 
+//      width: 100%, 
       yaxis: {
     //    type: 'category', 
     //    range: [-0.5, 0.5], 
@@ -160,7 +162,8 @@ d3.json("./static/data/box_plots_dict.json").then(function(data) {
     };
     Plotly.plot('locBoxPlot', {
       data: box_data,
-      layout: box_layout
+      layout: box_layout,
+      config: {responsive: true}
     });
 
 });
